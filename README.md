@@ -55,18 +55,22 @@ npm run dev
 ## Project Structure
 
 ```
-src/
-├── components/
-│   ├── BusinessCardForm.jsx    # Main form component
-│   ├── CardPreview.jsx         # Business card preview
-│   ├── QRCodeGenerator.jsx     # QR code generation
-│   ├── DownloadButtons.jsx     # Download functionality
-│   └── FormInput.jsx           # Reusable input component
-├── utils/
-│   └── vcard.js               # vCard format utilities
-├── App.jsx                    # Main application component
-├── index.css                  # Global styles and Tailwind imports
-└── main.jsx                   # Application entry point
+qr-business-card-generator/
+├── src/
+│ ├── App.jsx             # Main React component with QR card logic
+│ ├── main.jsx            # React entry point
+│ └── index.css           # Global styles
+├── public/               # Public assets (like favicon)
+├── package.json          # Project dependencies and scripts
+├── README.md             # Project documentation
+├── vite.config.js        # Vite config
+├── tailwind.config.js    # Tailwind CSS configuration
+├── postcss.config.js     # PostCSS config
+├── .eslintrc.cjs         # ESLint config
+├── .gitignore            # Files to ignore in Git
+├── index.html            # App HTML template
+└── node_modules/         # Installed dependencies (after npm install)
+
 ```
 
 ## Deployment
